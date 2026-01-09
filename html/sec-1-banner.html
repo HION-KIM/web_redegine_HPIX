@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPIX banner</title>
+    <!-- Script Jquery's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Script Swiper's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+
+    <!-- Link Inner's CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div>
+        <main>
+            <section class="sec-1-banner">
+                <div class="swiper sec-1-banner-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide kooji">
+                            <div class="content">
+                                <div class="brand-logo-box"><img src="../imgs/logo-sec-1-brandlogo-1.png" alt="브랜드로고">
+                                </div>
+                                <p>지속가능성, 기능성 즐거움의 컬렉션</p>
+                                <p>Sustainability, Functionality And Joy</p>
+                                <div class="moer-btn"><span>View More</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bolia">
+                            <div class="content">
+                                <div class="brand-logo-box"><img src="../imgs/logo-sec-1-brandlogo-2.png" alt="브랜드로고">
+                                </div>
+                                <p>자연에서 영감을 받아 탄생한 지속가능한 아름다운 뉴 스칸디나비안 디자인</p>
+                                <p>New Scandinavian Design Inspired by nature and born from sustainable beauty</p>
+                                <div class="moer-btn"><span>View More</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide groppi">
+                            <div class="content">
+                                <div class="brand-logo-box"><img src="../imgs/logo-sec-1-brandlogo-3.png" alt="브랜드로고">
+                                </div>
+                                <p>미니멀한 디자인과 마법 같은 조명 효과</p>
+                                <p>Minimalist Design Combined With Magical Lighting Effects</p>
+                                <div class="moer-btn"><span>View More</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sede">
+                            <div class="content">
+                                <div class="brand-logo-box"><img src="../imgs/logo-sec-1-brandlogo-4.png" alt="브랜드로고">
+                                </div>
+                                <p>안장 제조에서 시작된 스위스 핸드크래프트 아트 퍼니처 미래 지향적 모던 클래식</p>
+                                <p>Swiss handcrafted art furniture born from saddle craftsmanship a future-oriented
+                                    modern classic</p>
+                                <div class="moer-btn"><span>View More</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <style>
+        .sec-1-banner {
+            height: 100vh;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide {
+            text-align: center;
+            font-size: 20px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            z-index: -2;
+
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide::after {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #000;
+            z-index: -1;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide.kooji::before {
+            background-image: url(../imgs/img-sec-1-bannerimg-1.jpg);
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide.bolia::before {
+            background-image: url(../imgs/img-sec-1-bannerimg-2.jpeg);
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide.groppi::before {
+            background-image: url(../imgs/img-sec-1-bannerimg-3.jpg);
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide.sede::before {
+            background-image: url(../imgs/img-sec-1-bannerimg-4.jpg);
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content {
+            width: 100%;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.brand-logo-box {
+            height: 40px;
+            margin-bottom: 24px;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.brand-logo-box>img {
+            height: 100%;
+            object-fit: cover;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>p:nth-child(2) {
+            margin-bottom: 4px;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>p:nth-child(3) {
+            margin-bottom: 48px;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.moer-btn {
+            font-size: 14px;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.moer-btn>span {
+            position: relative;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.moer-btn>span::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+        }
+    </style>
+
+    <script>
+        var swiper = new Swiper(".sec-1-banner-swiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
