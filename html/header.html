@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPIX header</title>
+    <!-- Script Jquery's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Link Inner's CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="container">
+                <div class="sidemenu-open-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="logo-box"><a href="#"><img src="../imgs/logo-header.svg" alt="logo"></a></div>
+                <div class="icon-box">
+                    <div><a href="#"><img src="../imgs/icon-header-search.png" alt="icon-menu"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-header-shoppingbag.png" alt="icon-menu"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-header-human.png" alt="icon-menu"></a></div>
+                </div>
+            </div>
+            <div class="side-menu-box">
+                <div class="closed-btn">
+                    <span>closed</span>
+                </div>
+                <div>
+                    <a href="#"><span>LOGIN</span></a>
+                    <div></div>
+                    <a href="#"><span>WISHLIST</span></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">SHOP</a>
+                            <ul>
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">INSTOCK</a></li>
+                                <li><a href="#">FURNITURE</a></li>
+                                <li><a href="#">LIGHTING</a></li>
+                                <li><a href="#">DECO</a></li>
+                                <li><a href="#">TABLE WARE</a></li>
+                                <li><a href="#">CRAFT</a></li>
+                                <li><a href="#">LIVING ITEM</a></li>
+                                <li><a href="#">OUTLET</a></li>
+                                <li><a href="#">BRAND</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">PROMOTION</a></li>
+                        <li><a href="#">HPIX STORY</a></li>
+                        <li><a href="#">EXHIBITIONS</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        header>.container {
+            max-width: 1760px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0 80px;
+            height: 80px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        header>.container>.sidemenu-open-btn {
+            width: 24px;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        header>.container>.sidemenu-open-btn>div {
+            width: 100%;
+            height: 3px;
+            border-radius: 3px;
+            background-color: #222;
+        }
+
+        header>.container>.logo-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 102px;
+        }
+
+        header>.container>.icon-box {
+            display: flex;
+            gap: 18px;
+        }
+
+        header>.container>.icon-box>div {
+            width: 24px;
+        }
+
+        header>.side-menu-box {
+            position: absolute;
+            left: -455px;
+            top: 0;
+            height: 100vh;
+            width: clamp(200px, 47.89vh, 455px);
+            background-color: #fff;
+            transition: all .4s ease;
+        }
+
+        header>.side-menu-box.active {
+            left: 0;
+        }
+
+        header>.side-menu-box>.closed-btn {
+            padding: 28px 40px;
+            text-align: right;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        header>.side-menu-box>.closed-btn>span {
+            position: relative;
+            cursor: pointer;
+        }
+
+        header>.side-menu-box>.closed-btn>span::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            background-color: #222;
+        }
+
+        header>.side-menu-box>div:nth-child(2) {
+            padding: 40px 80px 28px clamp(40px, 8.42vh, 80px);
+            font-size: 14px;
+            font-weight: 400;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+        }
+
+        header>.side-menu-box>div:nth-child(2)>div {
+            width: 1px;
+            height: 12px;
+            background-color: #222;
+        }
+
+        header>.side-menu-box>nav {
+            padding-left: clamp(40px, 8.42vh, 80px);
+        }
+
+        header>.side-menu-box>nav>ul {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            gap: clamp(12px, 2.95vh, 28px);
+        }
+
+        header>.side-menu-box>nav>ul>li {
+            font-size: clamp(14px, 2.53vh, 24px);
+            font-weight: 500;
+        }
+
+        header>.side-menu-box>nav ul>li>a {
+            display: inline-block;
+        }
+
+        header>.side-menu-box>nav>ul>li>ul {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-left: 20px;
+        }
+
+        header>.side-menu-box>nav>ul>li>ul>li {
+            font-size: clamp(12px, 2.11vh, 20px);
+            font-weight: 500;
+            color: #808080;
+        }
+
+        header>.side-menu-box>nav>ul>li>ul>li>a:hover {
+            color: #222;
+        }
+
+        @media (max-width:1300px) and (min-width:1001px) {
+            header>.container {
+                max-width: unset;
+            }
+        }
+
+        @media (max-width:1000px) and (min-width:743px) {
+            header>.container {
+                max-width: unset;
+                padding: 0 40px;
+            }
+        }
+
+        @media (max-width:742px) {
+            header>.container {
+                max-width: unset;
+                min-width:350px;
+                padding: 0 20px;
+            }
+
+            header>.container>.logo-box {
+                width: 80px;
+            }
+
+            header>.container>.sidemenu-open-btn {
+                width: 20px;
+            }
+
+            header>.container>.icon-box>div {
+                width: 20px;
+            }
+        }
+    </style>
+
+    <script>
+        function headerSidemenuBoxInit() {
+            $('header .sidemenu-open-btn').click(function () {
+                $('header .side-menu-box').addClass('active');
+
+                console.log('1');
+            })
+
+            $('header .side-menu-box>.closed-btn>span').click(function () {
+                $('header .side-menu-box').removeClass('active');
+            })
+        }
+
+        headerSidemenuBoxInit();
+    </script>
+</body>
+
+</html>
