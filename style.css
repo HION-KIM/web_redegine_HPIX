@@ -6,6 +6,7 @@
 body>div {
     font-family: "Lora", "wanted-sans", serif;
     color: #222;
+    overflow: hidden;
 }
 
 /* ---------- 노멀라이즈 ---------- */

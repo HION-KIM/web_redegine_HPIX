@@ -30,7 +30,7 @@
                                 </div>
                                 <p>지속가능성, 기능성 즐거움의 컬렉션</p>
                                 <p>Sustainability, Functionality And Joy</p>
-                                <div class="moer-btn"><span>View More</span></div>
+                                <div class="moer-btn"><a href="#"><span>View More</span></a></div>
                             </div>
                         </div>
                         <div class="swiper-slide bolia">
@@ -39,7 +39,7 @@
                                 </div>
                                 <p>자연에서 영감을 받아 탄생한 지속가능한 아름다운 뉴 스칸디나비안 디자인</p>
                                 <p>New Scandinavian Design Inspired by nature and born from sustainable beauty</p>
-                                <div class="moer-btn"><span>View More</span></div>
+                                <div class="moer-btn"><a href="#"><span>View More</span></a></div>
                             </div>
                         </div>
                         <div class="swiper-slide groppi">
@@ -48,7 +48,7 @@
                                 </div>
                                 <p>미니멀한 디자인과 마법 같은 조명 효과</p>
                                 <p>Minimalist Design Combined With Magical Lighting Effects</p>
-                                <div class="moer-btn"><span>View More</span></div>
+                                <div class="moer-btn"><a href="#"><span>View More</span></a></div>
                             </div>
                         </div>
                         <div class="swiper-slide sede">
@@ -58,7 +58,7 @@
                                 <p>안장 제조에서 시작된 스위스 핸드크래프트 아트 퍼니처 미래 지향적 모던 클래식</p>
                                 <p>Swiss handcrafted art furniture born from saddle craftsmanship a future-oriented
                                     modern classic</p>
-                                <div class="moer-btn"><span>View More</span></div>
+                                <div class="moer-btn"><a href="#"><span>View More</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -87,6 +87,7 @@
             align-items: center;
             color: #fff;
             position: relative;
+
         }
 
         .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide::before {
@@ -108,6 +109,8 @@
 
 
         .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide::after {
+            content: "";
+            display: block;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -115,6 +118,7 @@
             top: 0;
             background-color: #000;
             z-index: -1;
+            opacity: .3;
         }
 
         .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide.kooji::before {
@@ -135,6 +139,7 @@
 
         .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content {
             width: 100%;
+            padding: 0 10px;
         }
 
         .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.brand-logo-box {
@@ -161,11 +166,15 @@
             font-size: 14px;
         }
 
-        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.moer-btn>span {
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.moer-btn>a {
+            display: inline-block;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.moer-btn>a>span {
             position: relative;
         }
 
-        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.moer-btn>span::after {
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide>.content>.moer-btn>a>span::after {
             content: "";
             display: block;
             width: 100%;
@@ -175,10 +184,38 @@
             left: 0;
             bottom: -4px;
         }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-pagination {
+            bottom: var(--swiper-pagination-bottom, 20%);
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-pagination>.swiper-pagination-bullet {
+            background-color: #808080;
+            width: 18px;
+            height: 6px;
+            border-radius: 9px;
+            opacity: 1;
+        }
+
+        .sec-1-banner>.sec-1-banner-swiper>.swiper-pagination>.swiper-pagination-bullet-active {
+            width: 50px;
+            background-color: #fff;
+        }
+
+        @media (max-width:742px) {
+            .sec-1-banner {
+                min-width: 350px;
+            }
+
+            .sec-1-banner>.sec-1-banner-swiper>.swiper-wrapper>.swiper-slide {
+                font-size: 16px;
+            }
+        }
     </style>
 
     <script>
         var swiper = new Swiper(".sec-1-banner-swiper", {
+            speed: 800,
             pagination: {
                 el: ".swiper-pagination",
             },
