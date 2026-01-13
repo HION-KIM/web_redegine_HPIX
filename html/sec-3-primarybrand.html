@@ -350,6 +350,23 @@
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
+
+        var $triggerBox = $('.sec-3-primarybrand > div:nth-child(1)');
+        var $triggercontent =$triggerBox.find('.content>ul');
+
+        gsap.to($triggercontent,{
+            yPercent : -100,
+
+            scrollTrigger:{
+                trigger:$triggerBox,
+                start: "top top",
+                end:"+=3000",
+                pin:$triggerBox,
+                scrub:true,
+                markers:true,
+            }
+        });
+
     </script>
 </body>
 
