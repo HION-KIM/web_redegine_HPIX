@@ -26,7 +26,7 @@
         <main>
             <section class="scroll"></section>
             <section class="sec-3-primarybrand">
-                <div>
+                <div class="scrolltrigger-wrap">
                     <div class="banner">
                         <h2>primary brand</h2>
                         <span>Frigerio</span>
@@ -92,7 +92,7 @@
 
 
 
-                <div>
+                <div class="scrolltrigger-wrap">
                     <div class="content">
                         <ul>
                             <li>
@@ -133,7 +133,8 @@
                                 </div>
                                 <div>
                                     <a href="#">
-                                        <div class="img-box"><img src="" alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_2_4.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
                                         <div class="text-box">
                                             <div>HORIZON COFFEE TABLE</div>
                                             <div>정교한 슬롯 패턴과 구조미가 돋보이는 건축적 커피 테이블</div>
@@ -153,7 +154,7 @@
 
 
 
-                <div>
+                <div class="scrolltrigger-wrap">
                     <div class="banner">
                         <h2>primary brand</h2>
                         <span>Spectrum</span>
@@ -164,7 +165,7 @@
                             <li>
                                 <div>
                                     <a href="#">
-                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_1.jpg"
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_1.png"
                                                 alt="주요브랜드 리스트 이미지"></div>
                                         <div class="text-box">
                                             <div>Paperback Wallsystem</div>
@@ -175,7 +176,7 @@
                                 </div>
                                 <div>
                                     <a href="#">
-                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_2.jpg"
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_2.png"
                                                 alt="주요브랜드 리스트 이미지"></div>
                                         <div class="text-box">
                                             <div>Tangled Coffee Table</div>
@@ -188,7 +189,7 @@
                             <li>
                                 <div>
                                     <a href="#">
-                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_3.jpg"
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_3.png"
                                                 alt="주요브랜드 리스트 이미지"></div>
                                         <div class="text-box">
                                             <div>Steltman Chair</div>
@@ -199,7 +200,7 @@
                                 </div>
                                 <div>
                                     <a href="#">
-                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_4.jpg"
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_4.png"
                                                 alt="주요브랜드 리스트 이미지"></div>
                                         <div class="text-box">
                                             <div>Berlin Chair</div>
@@ -219,27 +220,24 @@
 
 
     <style>
-        .scroll{
-            height:100vh;
-            width:100vw;
+        .scroll {
+            height: 100vh;
+            width: 100vw;
         }
-        .sec-3-primarybrand>div {
+
+        .sec-3-primarybrand .scrolltrigger-wrap {
             height: 100vh;
             display: flex;
             overflow: hidden;
         }
 
-        /* .sec-3-primarybrand>div:not(:first-child) {
-            display: none;
-        } */
-
-        .sec-3-primarybrand>div>div {
+        .sec-3-primarybrand .scrolltrigger-wrap>div {
             height: 100%;
             flex: 1;
             padding: 0 80px;
         }
 
-        .sec-3-primarybrand>div>.banner {
+        .sec-3-primarybrand .scrolltrigger-wrap>.banner {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -250,7 +248,7 @@
             position: relative;
         }
 
-        .sec-3-primarybrand>div>.banner::after {
+        .sec-3-primarybrand .scrolltrigger-wrap>.banner::after {
             content: "";
             position: absolute;
             left: 0;
@@ -264,7 +262,7 @@
             z-index: -1;
         }
 
-        .sec-3-primarybrand>div>.banner::before {
+        .sec-3-primarybrand .scrolltrigger-wrap>.banner::before {
             content: "";
             position: absolute;
             left: 0;
@@ -278,42 +276,47 @@
             z-index: -2;
         }
 
-        .sec-3-primarybrand>div:nth-child(1)>.banner::before {
+        .sec-3-primarybrand .scrolltrigger-wrap:nth-child(1)>.banner::before {
             background-image: url(../imgs/img-sec-4-banner-1.jpg);
         }
 
-        .sec-3-primarybrand>div:nth-child(2)>.banner::before {
+        .sec-3-primarybrand .scrolltrigger-wrap:nth-child(2)>.banner::before {
             background-image: url(../imgs/img-sec-4-banner-2.png);
         }
 
-        .sec-3-primarybrand>div:nth-child(3)>.banner::before {
+        .sec-3-primarybrand .scrolltrigger-wrap:nth-child(3)>.banner::before {
             background-image: url(../imgs/img-sec-4-banner-3.png);
         }
 
-        .sec-3-primarybrand>div>.banner>h2 {
+        .sec-3-primarybrand .scrolltrigger-wrap>.banner>h2 {
             font-size: 40px;
+            font-weight: 500;
         }
 
-        .sec-3-primarybrand>div>.banner>span {
+        .sec-3-primarybrand .scrolltrigger-wrap>.banner>span {
             font-size: 100px;
         }
 
-        .sec-3-primarybrand>div>.banner>p {
+        .sec-3-primarybrand .scrolltrigger-wrap>.banner>p {
             font-size: 24px;
         }
 
-        .sec-3-primarybrand>div:nth-child(1)>.banner>p {
+        .sec-3-primarybrand .scrolltrigger-wrap:nth-child(1)>.banner>p {
             margin-top: 8px;
         }
 
-        .sec-3-primarybrand>div>.content>ul {
+        .sec-3-primarybrand .scrolltrigger-wrap>.content {
+            overflow: hidden;
+        }
+
+        .sec-3-primarybrand .scrolltrigger-wrap>.content>ul {
             height: 100%;
             width: 100%;
 
             /* transform: translateY(-100%); */
         }
 
-        .sec-3-primarybrand>div>.content>ul>li {
+        .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li {
             height: 100%;
             width: 100%;
             display: flex;
@@ -322,50 +325,236 @@
             gap: 32px;
         }
 
-        .sec-3-primarybrand>div>.content>ul>li>div>a>.img-box {
-            margin-bottom: 24px;
-            height: 444px;
+        .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li>div>a {
+            width: 100%;
         }
 
-        .sec-3-primarybrand>div>.content>ul>li>div>a>.img-box>img {
+        .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li>div>a>.img-box {
+            margin-bottom: 24px;
+            height: 444px;
+            width: 100%;
+        }
+
+        .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li>div>a>.img-box>img {
             object-fit: cover;
             height: 100%;
         }
 
-        .sec-3-primarybrand>div>.content>ul>li>div>a>.text-box {
+        .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li>div>a>.text-box {
             font-size: 16px;
             font-weight: 400;
         }
 
-        .sec-3-primarybrand>div>.content>ul>li>div>a>.text-box>div:nth-child(1) {
+        .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li>div>a>.text-box>div:nth-child(1) {
             font-size: 20px;
             font-weight: 500;
         }
 
-        .sec-3-primarybrand>div>.content>ul>li>div>a>.text-box>div:nth-child(2) {
+        .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li>div>a>.text-box>div:nth-child(2) {
             margin: 8px 0 12px;
             letter-spacing: -0.32px;
+            height: 45px;
+        }
+
+        @media (max-width:1300px) and (min-width:1001px) {
+            .sec-3-primarybrand .scrolltrigger-wrap>div {
+                flex: unset;
+                padding: 0 20px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner {
+                flex-grow: 1;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>h2 {
+                font-size: 36px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>span {
+                font-size: 80px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>p {
+                font-size: 20px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.content {
+                width: 500px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li {
+                flex-direction: column;
+                height: unset;
+                gap: 0;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li>div {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        @media (max-width:1000px) and (min-width:743px) {
+            .sec-3-primarybrand .scrolltrigger-wrap {
+                height: unset;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>div {
+                flex: unset;
+                padding: 0 0;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner {
+                padding: 305px 20px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.content>ul {
+                padding: 0 20px;
+                height: unset;
+                box-sizing: border-box;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li {
+                height: unset;
+                padding: 40px 0;
+                gap: 20px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap:nth-child(2)>.content {
+                order: 2;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap:nth-child(2)>.banner {
+                order: 1;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>h2 {
+                font-size: 36px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>span {
+                font-size: 80px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>p {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width:742px) {
+            .sec-3-primarybrand {
+                min-width: 390px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap {
+                height: unset;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>div {
+                flex: unset;
+                padding: 0 0;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner {
+                padding: 191px 20px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.content>ul {
+                padding: 40px 20px 0;
+                height: unset;
+                box-sizing: border-box;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li {
+                height: unset;
+                padding: 0 0;
+                flex-direction: column;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.content>ul>li>div {
+                width: 100%;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap:nth-child(2)>.content {
+                order: 2;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap:nth-child(2)>.banner {
+                order: 1;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>h2 {
+                font-size: 24px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>span {
+                font-size: 40px;
+            }
+
+            .sec-3-primarybrand .scrolltrigger-wrap>.banner>p {
+                font-size: 16px;
+            }
         }
     </style>
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        var $triggerBox = $('.sec-3-primarybrand > div:nth-child(1)');
-        var $triggercontent =$triggerBox.find('.content>ul');
+        function sec3ScrollTriggerInit() {
+            $('.sec-3-primarybrand > div').each(function () {
 
-        gsap.to($triggercontent,{
-            yPercent : -100,
 
-            scrollTrigger:{
-                trigger:$triggerBox,
-                start: "top top",
-                end:"+=3000",
-                pin:$triggerBox,
-                scrub:true,
-                markers:true,
-            }
-        });
+                const mm = gsap.matchMedia();
+                var $pinSection = $(this);
+                var $triggercontent = $pinSection.find('.content>ul');
+
+                mm.add("(min-width: 1300px)", () => {
+                    gsap.to($triggercontent, {
+                        yPercent: -100,
+
+                        scrollTrigger: {
+                            trigger: $pinSection,
+                            start: "top top",
+                            end: "+=1500",
+                            pin: true,
+                            scrub: true,
+                            // markers: true,
+                        }
+                    });
+                });
+
+
+                mm.add("(max-width: 1300px) and (min-width: 1000px)", () => {
+                    gsap.to($triggercontent, {
+                        yPercent: -300,
+
+                        scrollTrigger: {
+                            trigger: $pinSection,
+                            start: "top top",
+                            end: "+=4500",
+                            pin: true,
+                            scrub: true,
+                            // markers: true,
+                        }
+                    });
+                });
+            });
+        }
+
+
+        sec3ScrollTriggerInit();
+
+
 
     </script>
 </body>
