@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPIX 스타일링 서비스</title>
+    <!-- Script Jquery's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Script Swiper's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Script GSAP's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- Script ScrollTrigger's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+
+    <!-- Link Inner's CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div>
+        <main>
+            <section class="sec-5-stylingservice">
+                <div class="container">
+                    <div>
+                        <div>STYLNG SERVICE</div>
+                        <div>고감도 컨템포러리 크리에이티브 랩 HPIX가 운영하는 3D 토탈 공간 스타일링 서비스</div>
+                        <div><a href="#">Veiw More</a></div>
+                    </div>
+                </div>
+            </section>
+    </div>
+    </main>
+
+
+    <style>
+        .sec-5-stylingservice>.container {
+            width: 100%;
+            height: 760px;
+            display: flex;
+            align-items: center;
+            padding: 0 12vw;
+            position: relative;
+        }
+
+        .sec-5-stylingservice>.container::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            z-index: -1;
+
+            background-image: url(../imgs/img-sec-5-banner.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .sec-5-stylingservice>.container>div>div:nth-child(1) {
+            font-size: 5rem;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .sec-5-stylingservice>.container>div>div:nth-child(2) {
+            font-size: 1.75rem;
+            font-weight: 400;
+            margin-bottom: 2.5rem;
+            color: #fff;
+        }
+
+        .sec-5-stylingservice>.container>div>div:nth-child(3) {
+            font-size: 1.25rem;
+            font-weight: 500;
+            position: relative;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .sec-5-stylingservice>.container>div>div:nth-child(3)>a::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            bottom: -0.25rem;
+        }
+
+        @media (max-width:1300px) and (min-width:1001px) {
+            .sec-5-stylingservice>.container {
+                height: 670px;
+                padding: 0 40px;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(1) {
+                font-size: 3.75rem;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(2) {
+                font-size: 1.5rem;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(3) {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:1000px) and (min-width:743px) {
+            .sec-5-stylingservice>.container {
+                height: 670px;
+                padding: 0 20px;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(1) {
+                font-size: 3.75rem;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(2) {
+                font-size: 1.5rem;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(3) {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:742px) {
+            .sec-5-stylingservice>.container {
+                height: 396px;
+                padding: 0 20px;
+                min-width: 390px;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(1) {
+                font-size: 1.75rem;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(2) {
+                font-size: 0.875rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .sec-5-stylingservice>.container>div>div:nth-child(3) {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</body>
+
+</html>
