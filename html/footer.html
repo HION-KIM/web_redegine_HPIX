@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPIX 푸터</title>
+    <!-- Script Jquery's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Script Swiper's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Script GSAP's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- Script ScrollTrigger's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+
+    <!-- Link Inner's CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div>
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <div class="info-box">
+                        <div>© HPIX</div>
+                        <div>
+                            <div>CEO : Park In Hye</div>
+                            <div>Address : 06303 28 Gaepo-ro 17-gil, Gangnam-gu, Seoul</div>
+                            <div>Email : info@hpix.co.kr</div>
+                        </div>
+                        <div>
+                            <div>Business Registration Number : 521-87-01623</div>
+                            <div>Mail-order-sales Registration Number : 제 2020-서울강남-00134호</div>
+                        </div>
+                        <div>
+                            <div>Tel : +82-10-8285-0172</div>
+                            <div>Weekdays 13:00~18:00</div>
+                        </div>
+                        <div>COPYRIGHT 2025 HPIX, ALL RIGHTS RESERVED.</div>
+                    </div>
+                    <nav class="menu-box">
+                        <ul>
+                            <li>
+                                <a href="#">INFO
+                                    <ul>
+                                        <li><a href="#">TERMS OF USE</a></li>
+                                        <li><a href="#">PRIVACY POLICY</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                                        <li><a href="#">STORE</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">INFORMATION
+                                    <ul>
+                                        <li><a href="#">멤버십 혜택</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">리뷰</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">CUSTOMER CARE
+                                    <ul>
+                                        <li><a href="#">입점문의</a></li>
+                                        <li><a href="#">B2B/프로젝트</a></li>
+                                        <li><a href="#">1:1문의</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sns-box">
+                    <div><a href="#"><img src="../imgs/icon-footer-sns-instar.svg" alt="sns 아이콘"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-footer-sns-facebook.svg" alt="sns 아이콘"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-footer-sns-blog.svg" alt="sns 아이콘"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-footer-sns-youtube.svg" alt="sns 아이콘"></a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <style>
+        footer>.container {
+            max-width: 1760px;
+            padding: 80px 80px 20px;
+
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer .content {
+            display: flex;
+            gap: 10px;
+        }
+
+        footer .content>.info-box {
+            flex-grow: 1;
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+        }
+
+        footer .content>.info-box>div {
+            font-size: clamp(11px, 0.83vw, 16px);
+            font-weight: 400;
+            color: #333;
+        }
+
+        footer .content>.info-box>div:nth-child(1) {
+            color: #000;
+        }
+
+        footer .content>.info-box>div:not(:nth-child(1)) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+        }
+
+        footer .content>.info-box>div:not(:nth-child(1))>div {
+            white-space: nowrap;
+        }
+
+        footer .content>.menu-box>ul {
+            display: flex;
+            width: clamp(350px, 27.92vw, 536px);
+            justify-content: space-between;
+        }
+
+        footer .content>.menu-box>ul>li {
+            font-size: clamp(11px, 0.83vw, 16px);
+            font-weight: 400;
+            color: #000;
+        }
+
+        footer .content>.menu-box>ul>li>ul {
+            width: 100%;
+            margin-top: 12px;
+
+        }
+
+        footer .content>.menu-box>ul>li>ul>li:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        footer .content>.menu-box>ul>li>ul>li {
+            color: #333;
+        }
+
+        footer .sns-box {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 24px;
+            margin-top: 64px;
+        }
+
+        footer .sns-box>div {
+            width: 24px;
+            height: 24px;
+            display:flex;
+            align-items: center;
+        }
+
+
+        @media (max-width:1000px) and (min-width:743px) {
+            footer .content {
+                flex-direction: column;
+                gap: 80px;
+            }
+
+            footer .content>.info-box {
+                order: 2;
+            }
+
+            footer .content>.menu-box>ul {
+                display: flex;
+                width: 100%;
+                justify-content: flex-start;
+                gap: 88px;
+            }
+
+            footer .sns-box {
+                justify-content: center;
+                gap: 40px;
+                margin-top: 60px;
+            }
+
+            footer .sns-box>div {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media (max-width:742px) {
+            footer>.container {
+                padding: 40px 20px;
+                min-width: 390px;
+            }
+
+            footer .content {
+                flex-direction: column;
+                gap: 80px;
+            }
+
+            footer .content>.info-box {
+                order: 2;
+            }
+
+            footer .content>.menu-box>ul {
+                display: flex;
+                width: 100%;
+                justify-content: flex-start;
+                gap: 88px;
+            }
+
+            footer .sns-box {
+                justify-content: center;
+                gap: 40px;
+                margin-top: 60px;
+            }
+
+            footer .sns-box>div {
+                width: 40px;
+                height: 40px;
+            }
+
+            footer .content>.info-box>div:last-child {
+                margin-top: 12px;
+            }
+
+            footer .sns-box {
+                justify-content: flex-start;
+                gap: 16px;
+                margin-top: 60px;
+            }
+
+            footer .sns-box>div {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
+</body>
+
+</html>
