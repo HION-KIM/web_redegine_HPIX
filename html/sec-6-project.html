@@ -48,7 +48,7 @@
                                         <div class="bg"></div>
                                         <div class="blur"></div>
                                     </div>
-                                    <div class="swiper sec-6-content-swiper">
+                                    <div class="swiper sec-6-content-swiper sec-6-content-swiper-1">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="img-box"><img src="../imgs/img-sec-6-slide-1-1.jpg"
@@ -63,7 +63,7 @@
                                                         alt="섹션 6 이미지"></div>
                                             </div>
                                         </div>
-                                        <div class="slide-pagination"></div>
+                                        <div class="slide-pagination slide-pagination-1"></div>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                                         <div class="bg"></div>
                                         <div class="blur"></div>
                                     </div>
-                                    <div class="swiper sec-6-content-swiper">
+                                    <div class="swiper sec-6-content-swiper sec-6-content-swiper-2">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="img-box"><img src="../imgs/img-sec-6-slide-2-1.jpg"
@@ -101,7 +101,7 @@
                                                         alt="섹션 6 이미지"></div>
                                             </div>
                                         </div>
-                                        <div class="slide-pagination"></div>
+                                        <div class="slide-pagination slide-pagination-2"></div>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                                         <div class="bg"></div>
                                         <div class="blur"></div>
                                     </div>
-                                    <div class="swiper sec-6-content-swiper">
+                                    <div class="swiper sec-6-content-swiper sec-6-content-swiper-3">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="img-box"><img src="../imgs/img-sec-6-slide-3-1.jpg"
@@ -139,7 +139,7 @@
                                                         alt="섹션 6 이미지"></div>
                                             </div>
                                         </div>
-                                        <div class="slide-pagination"></div>
+                                        <div class="slide-pagination slide-pagination-3"></div>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
             width: 50%;
         }
 
-        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content::after {
+        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide::after {
             content: "";
             display: block;
             width: 100%;
@@ -188,25 +188,26 @@
             position: absolute;
             left: 0;
             top: 0;
-            z-index: -2;
+            z-index: -4;
 
             background-image: url(../imgs/img-sec-6-slide-1.jpg);
             background-repeat: no-repeat;
-            background-position: 40% center;
-            background-size: auto 120%;
+            background-position: center center;
+            background-size: auto 130%;
 
         }
 
-        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide:nth-child(2)>.content::after {
+        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide:nth-child(2)::after {
             background-image: url(../imgs/img-sec-6-slide-2.jpg);
+            background-position: 60% center;
         }
 
-        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide:nth-child(3)>.content::after {
+        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide:nth-child(3)::after {
             background-image: url(../imgs/img-sec-6-slide-3.jpg);
-            background-position: 20% center;
+            background-position: 0 center;
         }
 
-        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content::before {
+        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide::before {
             content: "";
             display: block;
             width: 100%;
@@ -214,7 +215,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            z-index: -1;
+            z-index: -3;
             background-color: #000;
             opacity: 0.3;
         }
@@ -289,7 +290,9 @@
             align-items: center;
             position: relative;
 
-            padding: 40px 20px;
+            padding: clamp(40px, 12.63vh, 120px) clamp(40px, 8.33vw, 160px);
+
+
 
             box-sizing: border-box;
         }
@@ -313,7 +316,7 @@
 
             position: relative;
 
-            filter: blur(10px);
+            filter: blur(5px);
 
             z-index: -2;
         }
@@ -372,9 +375,10 @@
             max-width: 560px;
 
             aspect-ratio: 560 / 710;
+
         }
 
-        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox>.sec-6-content-swiper .swiper-slide {
+        .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox>.sec-6-content-swiper>.swiper-wrapper {
             width: 100%;
             height: 95%;
         }
@@ -383,6 +387,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+
         }
 
         .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox>.sec-6-content-swiper img {
@@ -404,6 +409,128 @@
             background-color: #000;
 
         }
+
+        @media (max-width:1300px) and (min-width:1001px) {
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>h1 {
+                font-size: 40px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.name {
+                font-size: 24px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.text {
+                font-size: 20px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.btn {
+                font-size: 16px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.pagination {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width:1000px) and (min-width:743px) {
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>h1 {
+                font-size: clamp(30px, 3.8vw, 40px);
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.name {
+                font-size: clamp(14px, 1.46vw, 28px);
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.text {
+                font-size: clamp(12px, 1.25vw, 24px);
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.btn {
+                font-size: clamp(12px, 1.04vw, 20px);
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.pagination {
+                font-size: 14px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox {
+                padding: clamp(20px, 4vw, 40px);
+            }
+        }
+
+        @media (max-width:742px) {
+            .sec-6-project>.container {
+                min-width: 390px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 48px;
+
+                box-sizing: border-box;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content {
+                padding-top: 0;
+                padding-left: 0;
+                position: relative;
+                width: 100%;
+                text-align: center;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.pagination {
+                justify-content: center;
+                margin-bottom: 40px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>h1 {
+                font-size: 30px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.name {
+                font-size: 18px;
+                margin: 20px 0 8px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.text {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.btn {
+                font-size: 14px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.content>.pagination {
+                font-size: 14px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox {
+                width: 100%;
+                padding: 0;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox>.background {
+                display: none;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox>.sec-6-content-swiper {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox>.sec-6-content-swiper>.swiper-wrapper {
+                height: 90%;
+            }
+
+            .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide>.sec-6-content-swiperBox>.sec-6-content-swiper>.slide-pagination>.swiper-pagination-bullet {
+                width: 8px;
+                height: 8px;
+                background-color: #fff;
+
+            }
+        }
     </style>
 
     <script>
@@ -421,11 +548,11 @@
             slidesPerView: 1,
             spaceBetween: 40,
             pagination: {
-                el: ".slide-pagination",
+                el: ".slide-pagination-1",
             },
             on: {
                 slideChangeTransitionEnd() {
-                    var $index = $('.sec-6-content-swiper .swiper-slide-active').index();
+                    var $index = $('.sec-6-content-swiper-1 .swiper-slide-active').index();
                     var $this = $('.sec-6-content-swiperBox-1>.background>.bg');
 
                     $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
@@ -437,11 +564,11 @@
             slidesPerView: 1,
             spaceBetween: 40,
             pagination: {
-                el: ".slide-pagination",
+                el: ".slide-pagination-2",
             },
             on: {
                 slideChangeTransitionEnd() {
-                    var $index = $('.sec-6-content-swiper .swiper-slide-active').index();
+                    var $index = $('.sec-6-content-swiper-2 .swiper-slide-active').index();
                     var $this = $('.sec-6-content-swiperBox-2>.background>.bg');
 
                     $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
@@ -453,11 +580,11 @@
             slidesPerView: 1,
             spaceBetween: 40,
             pagination: {
-                el: ".slide-pagination",
+                el: ".slide-pagination-3",
             },
             on: {
                 slideChangeTransitionEnd() {
-                    var $index = $('.sec-6-content-swiper .swiper-slide-active').index();
+                    var $index = $('.sec-6-content-swiper-3 .swiper-slide-active').index();
                     var $this = $('.sec-6-content-swiperBox-3>.background>.bg');
 
                     $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
