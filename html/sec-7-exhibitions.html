@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HPIX 스타일링 서비스</title>
+    <title>HPIX 전시</title>
     <!-- Script Jquery's JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Link Swiper's CSS -->
@@ -24,11 +24,11 @@
 <body>
     <div>
         <main>
-            <section class="sec-5-stylingservice">
+            <section class="sec-7-exhibitions">
                 <div class="container">
                     <div>
-                        <div>STYLNG SERVICE</div>
-                        <div>고감도 컨템포러리 크리에이티브 랩 HPIX가 운영하는 3D 토탈 공간 스타일링 서비스</div>
+                        <div>Current Exhibition</div>
+                        <div>공간과 오브제가 만들어내는 새로운 균형, 에이치픽스 전시에서 만나보세요.</div>
                         <div><a href="#">Veiw More</a></div>
                     </div>
                 </div>
@@ -36,12 +36,10 @@
         </main>
     </div>
 
-
-
     <style>
-        .sec-5-stylingservice>.container {
+        .sec-7-exhibitions>.container {
             width: 100%;
-            height: clamp(500px, 0.8vh, 760px);
+            height: clamp(500px,0.8vh,760px);
             display: flex;
             align-items: center;
             padding: 0 12vw;
@@ -49,7 +47,7 @@
             box-sizing: border-box;
         }
 
-        .sec-5-stylingservice>.container::before {
+        .sec-7-exhibitions>.container::before {
             content: "";
             display: block;
             width: 100%;
@@ -60,34 +58,34 @@
 
             z-index: -1;
 
-            background-image: url(../imgs/img-sec-5-banner.png);
+            background-image: url(../imgs/img-sec-7-banner.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
 
-        .sec-5-stylingservice>.container>div>div:nth-child(1) {
-            font-size: clamp(64px, 4.17vw, 80px);
+        .sec-7-exhibitions>.container>div>div:nth-child(1) {
+            font-size:clamp(64px, 4.17vw, 80px);
             font-weight: 400;
             color: #fff;
         }
 
-        .sec-5-stylingservice>.container>div>div:nth-child(2) {
-            font-size: clamp(16px, 1.46vw, 28px);
+        .sec-7-exhibitions>.container>div>div:nth-child(2) {
+            font-size:clamp(16px, 1.46vw, 28px);
             font-weight: 400;
             margin-bottom: 40px;
             color: #fff;
         }
 
-        .sec-5-stylingservice>.container>div>div:nth-child(3) {
-            font-size: clamp(14px, 1.04vw, 20px);
+        .sec-7-exhibitions>.container>div>div:nth-child(3) {
+            font-size:clamp(14px, 1.04vw, 20px);
             font-weight: 500;
             position: relative;
             color: #fff;
             display: inline-block;
         }
 
-        .sec-5-stylingservice>.container>div>div:nth-child(3)>a::after {
+        .sec-7-exhibitions>.container>div>div:nth-child(3)>a::after {
             content: "";
             display: block;
             width: 100%;
@@ -99,64 +97,65 @@
         }
 
         @media (max-width:1300px) and (min-width:1001px) {
-            .sec-5-stylingservice>.container {
+            .sec-7-exhibitions>.container {
                 height: 670px;
                 padding: 0 40px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(1) {
+            .sec-7-exhibitions>.container>div>div:nth-child(1) {
                 font-size: 60px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(2) {
+            .sec-7-exhibitions>.container>div>div:nth-child(2) {
                 font-size: 24px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(3) {
+            .sec-7-exhibitions>.container>div>div:nth-child(3) {
                 font-size: 16px;
             }
         }
 
         @media (max-width:1000px) and (min-width:743px) {
-            .sec-5-stylingservice>.container {
+            .sec-7-exhibitions>.container {
                 height: 670px;
                 padding: 0 20px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(1) {
+            .sec-7-exhibitions>.container>div>div:nth-child(1) {
                 font-size: 60px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(2) {
+            .sec-7-exhibitions>.container>div>div:nth-child(2) {
                 font-size: 24px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(3) {
+            .sec-7-exhibitions>.container>div>div:nth-child(3) {
                 font-size: 16px;
             }
         }
 
         @media (max-width:742px) {
-            .sec-5-stylingservice>.container {
+            .sec-7-exhibitions>.container {
                 height: 396px;
                 padding: 0 20px;
                 min-width: 390px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(1) {
+            .sec-7-exhibitions>.container>div>div:nth-child(1) {
                 font-size: 28px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(2) {
+            .sec-7-exhibitions>.container>div>div:nth-child(2) {
                 font-size: 14px;
                 margin-bottom: 20px;
             }
 
-            .sec-5-stylingservice>.container>div>div:nth-child(3) {
+            .sec-7-exhibitions>.container>div>div:nth-child(3) {
                 font-size: 12px;
             }
         }
     </style>
+
 </body>
 
 </html>
