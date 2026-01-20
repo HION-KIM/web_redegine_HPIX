@@ -1446,6 +1446,7 @@ header>.side-menu-box>nav>ul>li>ul>li>a:hover {
     background-image: url(../imgs/img-sec-6-slide-1-1.jpg);
     background-repeat: no-repeat;
     background-size: 150%;
+    background-size: cover;
     background-position: center;
 
     position: relative;
@@ -1600,7 +1601,7 @@ header>.side-menu-box>nav>ul>li>ul>li>a:hover {
     .sec-6-project .sec-6-swiper>.swiper-wrapper>.swiper-slide {
         flex-direction: column;
         align-items: center;
-        padding-top: 48px;
+        justify-content: center;
 
         box-sizing: border-box;
     }
