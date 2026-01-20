@@ -265,18 +265,19 @@
         .sec-4-curated>.container {
             width: 100%;
             max-width: 1760px;
-            padding: 120px 80px;
+            padding: 120px clamp(40px, 4.16vw, 80px);
             box-sizing: border-box;
             display: flex;
-            gap: 80px;
+            gap: clamp(40px, 4.16vw, 80px);
             margin: 0 auto;
+            align-items: stretch;
         }
 
         .sec-4-curated .viewbox {
-            width: 657px;
-            /* width:clamp(440px,69.16vh,657px); */
-            height: 770px;
+            width: clamp(440px, 34.22vw, 657px);
             flex-shrink: 0;
+
+            aspect-ratio: 657/770;
         }
 
         .sec-4-curated .viewbox>div {
@@ -354,18 +355,19 @@
 
         .sec-4-curated .viewbox>div>div {
             width: 100%;
-            padding: 58px 36px;
+            padding: 8.83% 5.48%;
+
         }
 
         .sec-4-curated .viewbox .brand {
             color: #fff;
-            font-size: 48px;
+            font-size: clamp(44px, 2.5vw, 48px);
             font-weight: 400;
         }
 
         .sec-4-curated .viewbox .name {
             color: #fff;
-            font-size: 24px;
+            font-size: clamp(20px, 1.25vw, 24px);
             font-weight: 400;
             margin-bottom: 20px;
         }
@@ -373,52 +375,44 @@
         .sec-4-curated .viewbox .price {
             color: #fff;
             font-size: 18px;
+            font-size: clamp(14px, 0.94vw, 18px);
             font-weight: 400;
         }
 
         .sec-4-curated .swiper-content {
-            height: 770px;
             display: flex;
-            flex-grow: 1;
             flex-direction: column;
             justify-content: space-between;
             overflow: hidden;
         }
 
         .sec-4-curated .swiper-content>div:nth-child(1)>h1 {
-            font-size: 48px;
+            font-size: clamp(44px, 2.5vw, 48px);
             font-weight: 500;
         }
 
         .sec-4-curated .swiper-content>div:nth-child(1)>p {
             font-size: 22px;
+            font-size: clamp(18px, 1.15vw, 22px);
             font-weight: 400;
         }
 
         .sec-4-curated .swiper-content>.sec-4-swiper {
             width: 100%;
-            height: 412px;
-            /* height:clamp(300px,43.37vh,412px); */
-
         }
 
         .sec-4-curated .swiper-content>.sec-4-swiper>.swiper-wrapper {
             width: 100%;
-            height: 100%;
         }
 
         .sec-4-curated .swiper-content>.sec-4-swiper>.swiper-wrapper>.swiper-slide {
-            width: 305px;
-            /* width:clamp(220px,32.11vh,305px); */
-            height: 100%;
+            width: clamp(220px, 15.86vw, 305px);
             display: flex;
             flex-direction: column;
-            gap: 16px;
         }
 
         .sec-4-curated .swiper-content>.sec-4-swiper>.swiper-wrapper>.swiper-slide>a {
             width: 100%;
-            height: 100%;
         }
 
         .sec-4-curated .swiper-content>.sec-4-swiper>.swiper-wrapper>.swiper-slide>a>.img-box {
@@ -428,7 +422,7 @@
 
         .sec-4-curated .swiper-content>.sec-4-swiper>.swiper-wrapper>.swiper-slide>a>.text-box {
             width: 100%;
-            font-size: 18px;
+            font-size: clamp(14px, 0.94vw, 18px);
             font-weight: 400;
         }
 
@@ -539,18 +533,23 @@
     </style>
 
     <script>
-        var sec4Swiper = new Swiper(".sec-4-swiper", {
-            speed: 400,
-            slidesPerView: "auto",
-            spaceBetween: 24,
+        function sec4EventInit() {
+            var sec4Swiper = new Swiper(".sec-4-swiper", {
+                speed: 400,
+                slidesPerView: "auto",
+                spaceBetween: 24,
 
-        });
+            });
 
-        $('.sec-4-swiper .swiper-slide').mouseenter(function () {
-            $thisIndex = $(this).index();
+            $('.sec-4-swiper .swiper-slide').mouseenter(function () {
+                $thisIndex = $(this).index();
 
-            $('.sec-4-curated .viewbox>div').eq($thisIndex).addClass('active').siblings().removeClass('active');
-        })
+                $('.sec-4-curated .viewbox>div').eq($thisIndex).addClass('active').siblings().removeClass('active');
+            })
+        }
+
+        sec4EventInit();
+
     </script>
 </body>
 

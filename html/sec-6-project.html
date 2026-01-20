@@ -312,6 +312,7 @@
             background-image: url(../imgs/img-sec-6-slide-1-1.jpg);
             background-repeat: no-repeat;
             background-size: 150%;
+            background-size: cover;
             background-position: center;
 
             position: relative;
@@ -534,63 +535,67 @@
     </style>
 
     <script>
-        var sec6swiper = new Swiper(".sec-6-swiper", {
-            speed: 800,
-            allowTouchMove: false,
-            navigation: {
-                nextEl: ".btn-next",
-                prevEl: ".btn-prev",
-            },
-        });
+        function sec7swiperEventInit() {
+            var sec6swiper = new Swiper(".sec-6-swiper", {
+                speed: 800,
+                allowTouchMove: false,
+                navigation: {
+                    nextEl: ".btn-next",
+                    prevEl: ".btn-prev",
+                },
+            });
 
-        var sec6ContentSwiper1 = new Swiper(".sec-6-content-swiper-1", {
-            speed: 800,
-            slidesPerView: 1,
-            spaceBetween: 40,
-            pagination: {
-                el: ".slide-pagination-1",
-            },
-            on: {
-                slideChangeTransitionEnd() {
-                    var $index = $('.sec-6-content-swiper-1 .swiper-slide-active').index();
-                    var $this = $('.sec-6-content-swiperBox-1>.background>.bg');
+            var sec6ContentSwiper1 = new Swiper(".sec-6-content-swiper-1", {
+                speed: 800,
+                slidesPerView: 1,
+                spaceBetween: 40,
+                pagination: {
+                    el: ".slide-pagination-1",
+                },
+                on: {
+                    slideChangeTransitionEnd() {
+                        var $index = $('.sec-6-content-swiper-1 .swiper-slide-active').index();
+                        var $this = $('.sec-6-content-swiperBox-1>.background>.bg');
 
-                    $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
+                        $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
+                    }
                 }
-            }
-        });
-        var sec6ContentSwiper2 = new Swiper(".sec-6-content-swiper-2", {
-            speed: 800,
-            slidesPerView: 1,
-            spaceBetween: 40,
-            pagination: {
-                el: ".slide-pagination-2",
-            },
-            on: {
-                slideChangeTransitionEnd() {
-                    var $index = $('.sec-6-content-swiper-2 .swiper-slide-active').index();
-                    var $this = $('.sec-6-content-swiperBox-2>.background>.bg');
+            });
+            var sec6ContentSwiper2 = new Swiper(".sec-6-content-swiper-2", {
+                speed: 800,
+                slidesPerView: 1,
+                spaceBetween: 40,
+                pagination: {
+                    el: ".slide-pagination-2",
+                },
+                on: {
+                    slideChangeTransitionEnd() {
+                        var $index = $('.sec-6-content-swiper-2 .swiper-slide-active').index();
+                        var $this = $('.sec-6-content-swiperBox-2>.background>.bg');
 
-                    $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
+                        $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
+                    }
                 }
-            }
-        });
-        var sec6ContentSwiper3 = new Swiper(".sec-6-content-swiper-3", {
-            speed: 800,
-            slidesPerView: 1,
-            spaceBetween: 40,
-            pagination: {
-                el: ".slide-pagination-3",
-            },
-            on: {
-                slideChangeTransitionEnd() {
-                    var $index = $('.sec-6-content-swiper-3 .swiper-slide-active').index();
-                    var $this = $('.sec-6-content-swiperBox-3>.background>.bg');
+            });
+            var sec6ContentSwiper3 = new Swiper(".sec-6-content-swiper-3", {
+                speed: 800,
+                slidesPerView: 1,
+                spaceBetween: 40,
+                pagination: {
+                    el: ".slide-pagination-3",
+                },
+                on: {
+                    slideChangeTransitionEnd() {
+                        var $index = $('.sec-6-content-swiper-3 .swiper-slide-active').index();
+                        var $this = $('.sec-6-content-swiperBox-3>.background>.bg');
 
-                    $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
+                        $this.removeClass('bg-0 bg-1 bg-2').addClass("bg" + "-" + $index);
+                    }
                 }
-            }
-        });
+            });
+        }
+
+        sec7swiperEventInit();
     </script>
 </body>
 

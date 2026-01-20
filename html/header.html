@@ -74,6 +74,8 @@
             left: 0;
             top: 0;
             width: 100%;
+
+            z-index: 1111;
         }
 
         header>.container {
@@ -126,7 +128,7 @@
             left: -455px;
             top: 0;
             height: 100vh;
-            width: clamp(200px, 47.89vh, 455px);
+            width: clamp(390px, 80vw, 455px);
             background-color: #fff;
             transition: all .4s ease;
         }
@@ -228,7 +230,7 @@
         @media (max-width:742px) {
             header>.container {
                 max-width: unset;
-                min-width:390px;
+                min-width: 390px;
                 padding: 0 20px;
             }
 
@@ -250,8 +252,6 @@
         function headerSidemenuBoxInit() {
             $('header .sidemenu-open-btn').click(function () {
                 $('header .side-menu-box').addClass('active');
-
-                console.log('1');
             })
 
             $('header .side-menu-box>.closed-btn>span').click(function () {

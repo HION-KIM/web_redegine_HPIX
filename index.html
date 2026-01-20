@@ -5,15 +5,942 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HPIX 리디자인</title>
+
+    <!-- Script Jquery's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Script Swiper's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Script GSAP's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- Script ScrollTrigger's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+
+    <!-- Link Inner's CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Script Inner's JS -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div>
-        <header></header>
+        <header>
+            <div class="container">
+                <div class="sidemenu-open-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="logo-box"><a href="#"><img src="../imgs/logo-header.svg" alt="logo"></a></div>
+                <div class="icon-box">
+                    <div><a href="#"><img src="../imgs/icon-header-search.png" alt="icon-menu"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-header-shoppingbag.png" alt="icon-menu"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-header-human.png" alt="icon-menu"></a></div>
+                </div>
+            </div>
+            <div class="side-menu-box">
+                <div class="closed-btn">
+                    <span>closed</span>
+                </div>
+                <div>
+                    <a href="#"><span>LOGIN</span></a>
+                    <div></div>
+                    <a href="#"><span>WISHLIST</span></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">SHOP</a>
+                            <ul>
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">INSTOCK</a></li>
+                                <li><a href="#">FURNITURE</a></li>
+                                <li><a href="#">LIGHTING</a></li>
+                                <li><a href="#">DECO</a></li>
+                                <li><a href="#">TABLE WARE</a></li>
+                                <li><a href="#">CRAFT</a></li>
+                                <li><a href="#">LIVING ITEM</a></li>
+                                <li><a href="#">OUTLET</a></li>
+                                <li><a href="#">BRAND</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">PROMOTION</a></li>
+                        <li><a href="#">HPIX STORY</a></li>
+                        <li><a href="#">EXHIBITIONS</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <main></main>
+        <main>
+            <section class="sec-1-banner">
+                <div class="swiper sec-1-banner-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide kooji">
+                            <div class="content">
+                                <div class="brand-logo-box"><img src="../imgs/logo-sec-1-brandlogo-1.png" alt="브랜드로고">
+                                </div>
+                                <p>지속가능성, 기능성 즐거움의 컬렉션</p>
+                                <p>Sustainability, Functionality And Joy</p>
+                                <div class="moer-btn"><a href="#"><span>View More</span></a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bolia">
+                            <div class="content">
+                                <div class="brand-logo-box"><img src="../imgs/logo-sec-1-brandlogo-2.png" alt="브랜드로고">
+                                </div>
+                                <p>자연에서 영감을 받아 탄생한 지속가능한 아름다운 뉴 스칸디나비안 디자인</p>
+                                <p>New Scandinavian Design Inspired by nature and born from sustainable beauty</p>
+                                <div class="moer-btn"><a href="#"><span>View More</span></a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide groppi">
+                            <div class="content">
+                                <div class="brand-logo-box"><img src="../imgs/logo-sec-1-brandlogo-3.png" alt="브랜드로고">
+                                </div>
+                                <p>미니멀한 디자인과 마법 같은 조명 효과</p>
+                                <p>Minimalist Design Combined With Magical Lighting Effects</p>
+                                <div class="moer-btn"><a href="#"><span>View More</span></a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sede">
+                            <div class="content">
+                                <div class="brand-logo-box"><img src="../imgs/logo-sec-1-brandlogo-4.png" alt="브랜드로고">
+                                </div>
+                                <p>안장 제조에서 시작된 스위스 핸드크래프트 아트 퍼니처 미래 지향적 모던 클래식</p>
+                                <p>Swiss handcrafted art furniture born from saddle craftsmanship a future-oriented
+                                    modern classic</p>
+                                <div class="moer-btn"><a href="#"><span>View More</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
 
-        <footer></footer>
+            <section class="sec-2-promotion">
+                <div class="container">
+                    <div class="content">
+                        <h1>Promotion</h1>
+                        <p>Modern luxury, refined for you.</p>
+                    </div>
+                    <div class="swiper sec-2-swiper-box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img-box"><img src="../imgs/img-sec2-promotion-1.jpg" alt="프로모션 이미지"></div>
+                                <div class="text-box">
+                                    <div>25FW BOLIA NEW COLLECTION</div>
+                                    <div>가을을 담은 신제품, BOLIA의 새로운 감성 아이템</div>
+                                    <div>2025.10.01 - 10.31</div>
+                                </div>
+                                <div class="list-box">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-1-1.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>BOLIA</div>
+                                                    <div>[SET] Cosima Curved Small Corners & Cord Sideboard</div>
+                                                    <div>KRW 12,240,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-1-2.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>BOLIA</div>
+                                                    <div>[SET] Cosima Curved Small Corners & Edia Coffe Table</div>
+                                                    <div>KRW 12,240,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-1-3.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>BOLIA</div>
+                                                    <div>Cosima 2 Modules Big Corners - Linor Beige(D 120)</div>
+                                                    <div>KRW 14,960,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box"><img src="../imgs/img-sec2-promotion-2.jpg" alt="프로모션 이미지"></div>
+                                <div class="text-box">
+                                    <div>TECTA BLACK&WHITE PROMOTION</div>
+                                    <div>모던 무드 블랙 & 화이트 스타일로 완성하는 프리미엄 공간 제안</div>
+                                    <div>2025.10.02 - 10.12</div>
+                                </div>
+                                <div class="list-box">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-2-1.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>TECTA</div>
+                                                    <div>M21-1 / M21 Dining, Conference Desk - Black</div>
+                                                    <div>KRW 8,610,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-2-2.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>TECTA</div>
+                                                    <div>M1-2 Dining, Conference Desk - Black</div>
+                                                    <div>KRW 10,360,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-2-3.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>TECTA</div>
+                                                    <div>B15 CANTILEVER CHAIR - BLACK</div>
+                                                    <div>KRW 1,638,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box"><img src="../imgs/img-sec2-promotion-3.jpg" alt="프로모션 이미지"></div>
+                                <div class="text-box">
+                                    <div>LIGHTING PROMOTION</div>
+                                    <div>빛의 미학, DAVIDE GROPPI가 제안하는 프리미엄 무드</div>
+                                    <div>2025.10.01 - 10.31</div>
+                                </div>
+                                <div class="list-box">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-3-1.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>DAVIDE GROPPI</div>
+                                                    <div>MOON 80</div>
+                                                    <div>KRW 12,240,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-3-2.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>DAVIDE GROPPI</div>
+                                                    <div>SHOJI (Indoor / Outdoor)</div>
+                                                    <div>KRW 3,722,400</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-3-3.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>DAVIDE GROPPI</div>
+                                                    <div>SIMBIOSI - White</div>
+                                                    <div>KRW 14,960,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box"><img src="../imgs/img-sec2-promotion-4.jpg" alt="프로모션 이미지"></div>
+                                <div class="text-box">
+                                    <div>MASSIMO COPENHAGEN</div>
+                                    <div>발끝에 닿는 감성, 러그로 완성하는 여백의 미 런칭 프로모션</div>
+                                    <div>2025.10.01 - 10.31</div>
+                                </div>
+                                <div class="list-box">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-4-1.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>MASSIMO COPENHAGEN</div>
+                                                    <div>NATURAL KELIMS</div>
+                                                    <div>KRW 1,479,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-4-2.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>MASSIMO COPENHAGEN</div>
+                                                    <div>MOON NIGHT</div>
+                                                    <div>KRW 4,760,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-box"><img src="../imgs/img-sec2-promotion-4-3.jpg"
+                                                        alt="list-img"></div>
+                                                <div class="text-box">
+                                                    <div>MASSIMO COPENHAGEN</div>
+                                                    <div>COPPER MOON</div>
+                                                    <div>KRW 4,760,000</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-3-primarybrand">
+                <div class="scrolltrigger-wrap">
+                    <div class="banner">
+                        <h2>primary brand</h2>
+                        <span>Frigerio</span>
+                        <p>Contemporary High-End Furniture</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_1_1.png"
+                                                alt="주요브랜드 리스트 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div>EDDIE COMPOSIZIONE9</div>
+                                            <div>세련된 비례와 디테일이 돋보이는 현대적 모듈형 소파</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_1_2.png"
+                                                alt="주요브랜드 리스트 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div>DAO COMPOSIZIONE 2</div>
+                                            <div>프리제리오의 세련된 모듈형 소파</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_1_3.png"
+                                                alt="주요브랜드 리스트 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div>DAO COMPOSIZIONE 5</div>
+                                            <div>프리제리오의 세련된 모듈형 소파</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_1_4.jpg"
+                                                alt="주요브랜드 리스트 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div>Horizon Large 18504 *2</div>
+                                            <div>프리제리오의 품질과 섬세함을 담은 모듈형 섹셔널 소파</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="scrolltrigger-wrap">
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_2_1.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="text-box">
+                                            <div>CAPO DINING ARMCHAIR</div>
+                                            <div>고전적 우아함과 현대적 실용미가 조화된 세련된 의자 시리즈</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_2_2.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="text-box">
+                                            <div>TWENTY-FIVE DINING TABLE</div>
+                                            <div>건축적 구조미와 장인 정신이 조화를 이룬 원목 식탁</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_2_3.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="text-box">
+                                            <div>ALTAIR CHAIR</div>
+                                            <div>삼각형의 기하미로 강렬한 존재감을 드러내는 현대적 의자</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_2_4.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="text-box">
+                                            <div>HORIZON COFFEE TABLE</div>
+                                            <div>정교한 슬롯 패턴과 구조미가 돋보이는 건축적 커피 테이블</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="banner">
+                        <h2>primary brand</h2>
+                        <span>DE LA ESPADA</span>
+                        <p>The Aesthetics Born Of Art And Craftsmanship</p>
+                    </div>
+                </div>
+
+
+
+                <div class="scrolltrigger-wrap">
+                    <div class="banner">
+                        <h2>primary brand</h2>
+                        <span>Spectrum</span>
+                        <p>Crafted for life, inspired by modern simplicity</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_1.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="text-box">
+                                            <div>Paperback Wallsystem</div>
+                                            <div>모듈식 플랫폼형 소파 컬렉션</div>
+                                            <div>도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_2.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="text-box">
+                                            <div>Tangled Coffee Table</div>
+                                            <div>캐롤리나 빌케가 디자인한 유연한 구조의 모던 커피 테이블</div>
+                                            <div>KRW 6,560,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_3.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="text-box">
+                                            <div>Steltman Chair</div>
+                                            <div>게리트 리트벨트가 디자인한 상징적 대칭 구조의 아이코닉 체어</div>
+                                            <div>KRW 5,170,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img_mainbrand_3_4.png"
+                                                alt="주요브랜드 리스트 이미지"></div>
+                                        <div class="text-box">
+                                            <div>Berlin Chair</div>
+                                            <div>게리트 리트벨트의 아방가르드 미학이 담긴 상징적 모던 체어</div>
+                                            <div>KRW 7,360,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-4-curated">
+                <div class="container">
+                    <div class="viewbox">
+                        <div class="active">
+                            <div>
+                                <div class="brand">BOCCI</div>
+                                <div class="name">73.1 Random - CLEAR</div>
+                                <div class="price">도산점 문의</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">TECTA</div>
+                                <div class="name">SPLIT CHAIR - Black / Chrome</div>
+                                <div class="price">KRW 3,140,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">TECTA</div>
+                                <div class="name">B20 CANTILEVER CHAIR</div>
+                                <div class="price">KRW 1,701,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">BOLIA</div>
+                                <div class="name">COSIMA CURVED 3 MODULES</div>
+                                <div class="price">KRW 16,720,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">TECTA</div>
+                                <div class="name">M4RS Console Trolley</div>
+                                <div class="price">KRW 5,770,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">TECTA</div>
+                                <div class="name">M1-2 Dining, Conference Desk</div>
+                                <div class="price">KRW 10,360,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">GUBI</div>
+                                <div class="name">Multi-Lite Portable Lamp</div>
+                                <div class="price">KRW 699,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">GUBI</div>
+                                <div class="name">Timberline Floor Lamp</div>
+                                <div class="price">KRW 1,299,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">LOUIS POULSEN</div>
+                                <div class="name">Panthella 250 - White</div>
+                                <div class="price">KRW 1,701,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">BOCCI</div>
+                                <div class="name">14P PORTABLE LAMP</div>
+                                <div class="price">도산점 문의</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">QUBUS</div>
+                                <div class="name">LITTLE JOSEPH CANDLE HOLDER</div>
+                                <div class="price">KRW 180,000</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="brand">LOUIS POULSEN</div>
+                                <div class="name">PH 3½-3 Pendant</div>
+                                <div class="price">KRW 2,213,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-content">
+                        <div>
+                            <h1>Curated By HPIX</h1>
+                            <p>에이치픽스가 현대적 시선으로 선별한 감도 높은 디자인 컬렉션</p>
+                        </div>
+                        <div class="swiper sec-4-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-1.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">BOCCI</div>
+                                            <div class="name">73.1 Random - CLEAR</div>
+                                            <div class="price">도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-2.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">TECTA</div>
+                                            <div class="name">SPLIT CHAIR - Black / Chrome</div>
+                                            <div class="price">KRW 3,140,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-3.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">TECTA</div>
+                                            <div class="name">B20 CANTILEVER CHAIR</div>
+                                            <div class="price">KRW 1,701,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-4.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">BOLIA</div>
+                                            <div class="name">COSIMA CURVED 3 MODULES</div>
+                                            <div class="price">KRW 16,720,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-5.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">TECTA</div>
+                                            <div class="name">M4RS Console Trolley</div>
+                                            <div class="price">KRW 5,770,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-6.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">TECTA</div>
+                                            <div class="name">M1-2 Dining, Conference Desk</div>
+                                            <div class="price">KRW 10,360,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-7.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">GUBI</div>
+                                            <div class="name">Multi-Lite Portable Lamp</div>
+                                            <div class="price">KRW 699,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-8.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">GUBI</div>
+                                            <div class="name">Timberline Floor Lamp</div>
+                                            <div class="price">KRW 1,299,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-9.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">LOUIS POULSEN</div>
+                                            <div class="name">Panthella 250 - White</div>
+                                            <div class="price">KRW 1,701,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-10.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">BOCCI</div>
+                                            <div class="name">14P PORTABLE LAMP</div>
+                                            <div class="price">도산점 문의</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-11.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">QUBUS</div>
+                                            <div class="name">LITTLE JOSEPH CANDLE HOLDER</div>
+                                            <div class="price">KRW 180,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img-box"><img src="../imgs/img-sec-4-item-12.png" alt="섹션4 제품 이미지">
+                                        </div>
+                                        <div class="text-box">
+                                            <div class="brand">LOUIS POULSEN</div>
+                                            <div class="name">PH 3½-3 Pendant</div>
+                                            <div class="price">KRW 2,213,000</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-5-stylingservice">
+                <div class="container">
+                    <div>
+                        <div>STYLNG SERVICE</div>
+                        <div>고감도 컨템포러리 크리에이티브 랩 HPIX가 운영하는 3D 토탈 공간 스타일링 서비스</div>
+                        <div><a href="#">Veiw More</a></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-6-project">
+                <div class="container">
+                    <div class="swiper sec-6-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h1>PROJECT By HPIX</h1>
+                                    <span class="name">Signiel 100PY</span>
+                                    <p class="text">여유로운 일상, 북유럽 어느 고요한 숲을 닮은 공간</p>
+                                    <div class="btn"><a href="#">Veiw More</a></div>
+                                    <div class="pagination">
+                                        <div class="btn-prev"><img src="../imgs/icon-arr-back-w.png" alt="arr-prev">
+                                        </div>
+                                        <div><span> 1 /</span> 3</div>
+                                        <div class="btn-next"><img src="../imgs/icon-arr-next-w.png" alt="arr-next">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sec-6-content-swiperBox sec-6-content-swiperBox-1">
+                                    <div class="background">
+                                        <div class="bg"></div>
+                                        <div class="blur"></div>
+                                    </div>
+                                    <div class="swiper sec-6-content-swiper sec-6-content-swiper-1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-1-1.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-1-2.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-1-3.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-pagination slide-pagination-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h1>PROJECT By HPIX</h1>
+                                    <span class="name">Hannam The Hill</span>
+                                    <p class="text">본연의 품격을 최대한으로 드러내는 공간</p>
+                                    <div class="btn"><a href="#">Veiw More</a></div>
+                                    <div class="pagination">
+                                        <div class="btn-prev"><img src="../imgs/icon-arr-back-w.png" alt="arr-prev">
+                                        </div>
+                                        <div><span> 2 /</span> 3</div>
+                                        <div class="btn-next"><img src="../imgs/icon-arr-next-w.png" alt="arr-next">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sec-6-content-swiperBox sec-6-content-swiperBox-2">
+                                    <div class="background">
+                                        <div class="bg"></div>
+                                        <div class="blur"></div>
+                                    </div>
+                                    <div class="swiper sec-6-content-swiper sec-6-content-swiper-2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-2-1.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-2-2.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-2-3.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-pagination slide-pagination-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h1>PROJECT By HPIX</h1>
+                                    <span class="name">Dogok Tower Palace</span>
+                                    <p class="text">일상 공간에서 예술 작품으로의 치환</p>
+                                    <div class="btn"><a href="#">Veiw More</a></div>
+                                    <div class="pagination">
+                                        <div class="btn-prev"><img src="../imgs/icon-arr-back-w.png" alt="arr-prev">
+                                        </div>
+                                        <div><span> 3 /</span> 3</div>
+                                        <div class="btn-next"><img src="../imgs/icon-arr-next-w.png" alt="arr-next">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sec-6-content-swiperBox sec-6-content-swiperBox-3">
+                                    <div class="background">
+                                        <div class="bg"></div>
+                                        <div class="blur"></div>
+                                    </div>
+                                    <div class="swiper sec-6-content-swiper sec-6-content-swiper-3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-3-1.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-3-2.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="img-box"><img src="../imgs/img-sec-6-slide-3-3.jpg"
+                                                        alt="섹션 6 이미지"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-pagination slide-pagination-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-7-exhibitions">
+                <div class="container">
+                    <div>
+                        <div>Current Exhibition</div>
+                        <div>공간과 오브제가 만들어내는 새로운 균형, 에이치픽스 전시에서 만나보세요.</div>
+                        <div><a href="#">Veiw More</a></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <div class="info-box">
+                        <div>© HPIX</div>
+                        <div>
+                            <div>CEO : Park In Hye</div>
+                            <div>Address : 06303 28 Gaepo-ro 17-gil, Gangnam-gu, Seoul</div>
+                            <div>Email : info@hpix.co.kr</div>
+                        </div>
+                        <div>
+                            <div>Business Registration Number : 521-87-01623</div>
+                            <div>Mail-order-sales Registration Number : 제 2020-서울강남-00134호</div>
+                        </div>
+                        <div>
+                            <div>Tel : +82-10-8285-0172</div>
+                            <div>Weekdays 13:00~18:00</div>
+                        </div>
+                        <div>COPYRIGHT 2025 HPIX, ALL RIGHTS RESERVED.</div>
+                    </div>
+                    <nav class="menu-box">
+                        <ul>
+                            <li>
+                                <a href="#">INFO</a>
+                                <ul>
+                                    <li><a href="#">TERMS OF USE</a></li>
+                                    <li><a href="#">PRIVACY POLICY</a></li>
+                                    <li><a href="#">ABOUT</a></li>
+                                    <li><a href="#">STORE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">INFORMATION</a>
+                                <ul>
+                                    <li><a href="#">멤버십 혜택</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">리뷰</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">CUSTOMER CARE</a>
+                                <ul>
+                                    <li><a href="#">입점문의</a></li>
+                                    <li><a href="#">B2B/프로젝트</a></li>
+                                    <li><a href="#">1:1문의</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sns-box">
+                    <div><a href="#"><img src="../imgs/icon-footer-sns-instar.svg" alt="sns 아이콘"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-footer-sns-facebook.svg" alt="sns 아이콘"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-footer-sns-blog.svg" alt="sns 아이콘"></a></div>
+                    <div><a href="#"><img src="../imgs/icon-footer-sns-youtube.svg" alt="sns 아이콘"></a></div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
